@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Suicide Risk Assessment</title>
+        <link href ="style.css" rel ="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        <script src = "main.js"></script>
+        
+    </head>
+        <body>
+        <h1>Suicide Behaviors Questionnaire</h1>
+        <h6>(Answer each question as honestly as you can. Mark one answer only for each question)</h6>
+        <form id= "quiz" name="quiz">
+            <p class="questions">1. Have you ever thought about or attempted to kill yourself? </p>
+            <select name="question1">
+            <option name="question1" value="1" checked>Never</option><br>
+            <option name="question1" value="2">It was just a brief passing thought</option><br>
+            <option name="question1" value="3">I have had a plan at least once to kill myself but did not try to do it</option><br>
+            <option name="question1" value="3">I have had a plan at least once to kill myself and really wanted to die</option><br>
+            <option name="question1" value="4">I have attempted to kill myself, but did not want to die</option><br>
+            <option name="question1" value="4">I have attempted to kill myself, and really hoped to die</option><br>
+             </select>
+            <p class="questions">2. How often have you thought about killing yourself in the last year? </p>
+            <select name="question2">
+            <option  name="question2" value="1" checked >Never</option><br>
+            <option  name="question2" value="2">Rarely (1 time)</option><br>
+            <option  name="question2" value="2">Sometimes (2 times)</option><br>
+            <option  name="question2" value="3">Often (3-4 times)</option><br>
+            <option  name="question2" value="3">Very Often (5 or more times)</option><br>
+            </select>
+            <p class="questions">3. Have you ever told someone that you were going to commit suicide, or that you might do it?</p>
+            <select name="question3">
+            <option name="question3" value="1" checked>No</option><br>
+            <option  name="question3" value="2">Yes, at one time, but did not really want to die</option><br>
+            <option  name="question3" value="2">Yes, at one time, and really wanted to die</option><br>
+            <option  name="question3" value="3">Yes, more than once, but did not want to do it</option><br>
+            <option  name="question3" value="3">Yes, more than once, and really wanted to do it</option><br>
+            </select>
+            
+            <p class="questions">4. How likely is it that you will attempt suicide someday?</p>
+            <select name="question4">
+            <option  name="question4" value="0"checked>Never</option><br>
+            <option  name="question4" value="1">No chance at all</option><br>
+            <option  name="question4" value="2">Rather unlikely</option><br>
+            <option  name="question4" value="3">Unlikely</option><br>
+            <option  name="question4" value="4"> Likely</option><br>
+            <option  name="question4" value="5">Rather likely</option><br>
+            <option name="question4" value="6">Very likely</option><br>
+            </select>
+            <br>
+
+            <input id = "button" type = "button" value = "Score My Suicide Screeing Quiz" onclick = "check();">
+
+
+        </form>
+
+        <div id = "after_submit">
+            <p id = "message"></p><br>
+            <p id="sensitivity_message"></p><br>
+            <span id = "number_correct"></span><br>
+            <img id = "picture">
+        </div>
+
+        </body>
+    
+</html>
